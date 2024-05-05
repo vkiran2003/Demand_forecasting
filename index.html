@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demand Forecasting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Demand Forecasting for Inventory Management</h1>
+    <form id="demandForm">
+      <label for="inputSales">Sales:</label>
+      <input type="number" id="inputSales" placeholder="Enter sales">
+      <label for="inputMarketing">Marketing Expenditure:</label>
+      <input type="number" id="inputMarketing" placeholder="Enter marketing expenditure">
+      <label for="inputPrice">Price:</label>
+      <input type="number" id="inputPrice" placeholder="Enter price">
+      <button type="submit">Predict Demand</button>
+    </form>
+    <div id="predictionResult" style="display:none;">
+      <h2>Predicted Demand:</h2>
+      <p id="predictedDemand"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
